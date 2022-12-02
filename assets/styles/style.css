@@ -136,15 +136,15 @@ main{
 }
 
 .main__box h1{
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 700;
     color: white;
 }
 
 .main__box p{
     color: white;
-    margin-top: 30px;
-    font-size: 30px;
+    margin-top: 20px;
+    font-size: 24px;
     font-weight: 400;
 }
 
@@ -156,7 +156,7 @@ main{
     padding: 30px 0px;
 }
 
-.info h1{
+.info__h1{
     text-align: center;
     font-size: 40px;
     text-transform: uppercase;
@@ -232,8 +232,7 @@ main{
     font-weight: 500;
     margin-top: 20px;
     font-size: 24px;
-    line-height: 26px;
-    letter-spacing: 2px;
+    line-height: 30px;
     color: #000000;
 }
 
@@ -250,13 +249,17 @@ main{
 }
 
 .history__h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #056D9E;
+    position: relative;
     text-align: center;
     border-top: 2px solid goldenrod;
     padding-top: 30px;
 }
 
 .history__p{
-    padding: 20px 0px;
+    padding: 10px 0px;
     font-size: 20px;
     line-height: 30px;
     color: rgb(95, 26, 26);
@@ -267,4 +270,21 @@ main{
     line-height: 34px;
     font-weight: 500;
     color: #002C60;
+}
+
+.history__photo{
+    position: relative;
+    background: url(../images/Shkola.jpg) center / cover;
+    height: 95vh;
+}
+
+.history__photo h1{
+    background: #0386C4;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    position: absolute;
 }
