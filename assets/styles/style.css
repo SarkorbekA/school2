@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 10px;
+    position: relative;
+}
+
+header{
+    background: #0386C4;
+    position: relative;
+    z-index: 11;
+    height: 60px;
+}
+
+.header__root{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+
+.logo img{
+    margin-right: 10px;
+    width:  40px;
+    vertical-align: bottom;
+}
+
+.menu{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.menu a{
+    color: white;
+}
+
+.menu a:hover{
+    color: #01577D;
+    transition: 0.5s;
+}
+
+.menu li{
+    position: relative;
+}
+
+.menu__list>li:hover .sub-menu__list{
+    display: block;
+}
+
+.menu__link{
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.menu__link:hover{
+    background: #EDC339;
+}
+
+.menu__item{
+    padding: 15px 0px;
+}
+
+.menu__list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sub-menu__list a{
+    padding: 16px;
+    display: inline-block;
+    width: 100%;
+    background: #0386C4;
+}
+
+.sub-menu__list a:hover{
+    transition: ease-in 0.2s;
+    background: #EDC339;
+}
+
+.sub-menu__link{
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.sub-menu__list{
+    position: absolute;
+    z-index: 10;
+    top: 55px;
+    left: -20px;
+    display: none;
+    cursor: pointer;
+    min-width: 180px;
+}
+/*  ============ Main =============   */
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+
+.filter{
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+}
+
+main{
+    background: url(../images/background.jpg) center/cover ;
+}
+
+.main__box h1{
+    font-size: 55px;
+    font-weight: 700;
+    color: white;
+}
+
+.main__box p{
+    color: white;
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/*    info    */
+
+
+.info{
+    background: url(../images/1.png);
+    padding: 30px 0px;
+}
+
+.info h1{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #056D9E;
+    position: relative;
+}
+
+.info__hr{
+    height:3px;
+    border-width:0;
+    width: 200px;
+    margin: auto;
+    background-color: #056D9E;
+}
+
+.info__box{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__items{
+    width: calc(30%);
+    padding: 10px;
+    border: 3px solid  #056D9E;
+    font-size: 30px; 
+    border-radius: 10px;
+    color: #045acf;
+    text-align: center;
+}
+
+.counter {
+    color:black;
+}
+
+.director{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.director h1{
+    font-weight: 700;
+    font-size: 41px;
+    line-height: 39px;
+    letter-spacing: -0.025em;
+    color: #002C60;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.director__box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.director__text{
+    width: calc(100% - 400px);
+    margin-left: 20px;
+}
+
+.director__text h3{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 23px;
+    letter-spacing: -0.025em;
+    color: #002C60;
+    text-align: center;
+}
+
+.director__text p{
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+.director__img{
+    background: url(../images/DSC_2837.JPG) center / cover;
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    border: 1px solid #002C60;
+}
+
+.history{
+    margin-top: 80px;
+}
+
+.history__h1{
+    text-align: center;
+    border-top: 2px solid goldenrod;
+    padding-top: 30px;
+}
+
+.history__p{
+    padding: 20px 0px;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(95, 26, 26);
+}
+
+.history__p:last-child{
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 500;
+    color: #002C60;
+}
